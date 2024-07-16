@@ -1,6 +1,31 @@
 # Changelog
 
 Toutes les modifications notables de ce projet seront documentées dans ce fichier.
+# [2.5.0] - 
+## ajout :
+- [#101](https://github.com/Refhi/Weda-Helper/issues/101) - Ajout d'une cotation par défaut selon le mode de la FSE
+=> vous pouvez désormais créer une cotation "DéfautALD" dans vos favoris et elle sera automatiquement sélectionnée lors de la création d'une FSE en mode ALD
+=> idem pour "DéfautPédia" qui sera automatiquement sélectionnée pour les enfants 0-6 ans
+- [#131](https://github.com/Refhi/Weda-Helper/issues/131) - navigation entre champs de texte via Tab et Shift+Tab dans les pages de consultation. Focus possible à l'ouverture d'une consultation dans le champ de titre.
+- [#151](https://github.com/Refhi/Weda-Helper/issues/151) - ajout de semelle et orthoplastie dans les mots-clés pour la classification "podologie" automatique
+- [#116](https://github.com/Refhi/Weda-Helper/issues/116) - enregistre automatiquement le dernier type de document pour l'envoi au DMP pour les PDF classés comme courrier dans Weda
+- [#173](https://github.com/Refhi/Weda-Helper/issues/173) - le bouton "TPE Bis" dans la popup de l'extension envoie 1€ si aucun règlement n'a été récemment demandé. Ce afin de faciliter les tests de liaison avec le Companion/TPE.
+- [#119](https://github.com/Refhi/Weda-Helper/issues/119) - ajout d'un bouton pour imprimer directement les pdfs présents dans les "documents du cabinet medical"
+- [#123](https://github.com/Refhi/Weda-Helper/issues/123) - mise à jour des textes explicatifs au sujet de la configuration du Companion.
+- [#179](https://github.com/Refhi/Weda-Helper/issues/179) - décoche automatiquement la case "ordonnance numérique" si on fait une Demande d'Imagerie
+- [#137](https://github.com/Refhi/Weda-Helper/issues/137) - valider automatiquement une ordonnance numérique
+- [#99](https://github.com/Refhi/Weda-Helper/issues/99) - sélection automatique du type de document "FSE dégradée" lors de l'import d'une PJ SCOR
+- [#182](https://github.com/Refhi/Weda-Helper/issues/182) - affichage d'un message d'alerte en cas de contre-indication médicamenteuse absolue
+
+## fix :
+- [#171](https://github.com/Refhi/Weda-Helper/issues/171) - Correction d'un bug dans la fonction "Décocher automatiquement le message et le fichier IHE_XDM.zip lors de l'importation d'un message depuis la messagerie sécurisée" qui décochait le document joint dans certains cas
+- Correction de l'option "Cocher automatiquement la case "Réaliser une FSE en gestion unique" pour les patients C2S" qui ne fonctionnait plus
+
+
+# [2.4.2] - 01/07/2024
+## fix 
+- [#168](https://github.com/Refhi/Weda-Helper/issues/168) - Perte curseur lors prescription d'une demande avec l'historique affiché
+- le panneau de DMP est de nouveau masqué dans les Courriers lorsqu'historyToLeft est activé
 
 # [2.4.1] - ... - bugfix
 ## fix de bugs :
