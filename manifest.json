@@ -14,13 +14,14 @@
   },
   "web_accessible_resources": [{
      "matches": ["*://secure.weda.fr/*"],
-     "resources": ["pdf.mjs", "pdf.worker.mjs"]
+     "resources": ["lib/pdf.mjs", "lib/pdf.worker.mjs"]
    }],
   "content_scripts": [
     {
       "matches": ["*://secure.weda.fr/*"],
       "js": [
           "lib/hotkeys.js",
+          "lib/moment.js",
           "content.js",
           "consultation.js",
           "fse.js",
@@ -31,14 +32,8 @@
           "update.js",
           "aati.js",
           "metrics.js",
-          "upload.js"]
-    },
-    {
-      "matches": ["*://secure.weda.fr/FolderMedical/UpLoaderForm.aspx"],
-      "js": [
-        "moment.js",
-        "pdfParser.js"
-      ]
+          "upload.js",
+          "pdfParser.js"]
     }
   ]
 }
